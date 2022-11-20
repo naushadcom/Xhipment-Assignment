@@ -18,9 +18,9 @@ const Account = () => {
       <div>
         <p>Welcome, {user?.displayName}</p>
       </div>
-      <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
+      {/* <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
         Logout
-      </button>
+      </button> */}
     </div>
   );
 };

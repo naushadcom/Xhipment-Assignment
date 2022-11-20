@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import All from "./components/All";
 import Navbar from "./components/Navbar";
 import Protected from "./components/Protected";
 import { AuthContextProvider } from "./context/AuthContext";
@@ -20,6 +21,7 @@ function App() {
             element={
               <Protected>
                 <Account />
+                <All/>
               </Protected>
             }
           />
