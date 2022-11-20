@@ -19,11 +19,12 @@ const Navbar = () => {
         display: "flex",
         justifyContent: "space-around",
         backgroundColor: "lightblue",
+        padding:"20px"
       }}
     >
       <h1 style={{ fontSize: "40px" }}>XHIPMENT</h1>
-      <h4 style={{marginTop:"40px"}}>Welcome, <span style={{fontWeight:"bold",fontSize:"20px"}}>{user?.displayName}</span></h4>
-      <div style={{ marginTop: "35px" }}>
+      {/* <h4 style={{marginTop:"40px"}}>Welcome, <span style={{fontWeight:"bold",fontSize:"20px"}}>{user?.displayName}</span></h4> */}
+      <div style={{ marginTop: "15px" }}>
         {user?.displayName ? (
           <button style={{ marginLeft: "43%",backgroundColor:"lightblue",fontWeight:"bold" }} onClick={handleSignOut}>
             Logout
@@ -36,7 +37,7 @@ const Navbar = () => {
               fontWeight: "bold",
               textDecoration: "none",
               fontSize: "20px",
-              border: "1px solid black",
+              border: "4px solid black",
               padding: "10px",
             }}
           >

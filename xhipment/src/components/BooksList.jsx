@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Table, Button } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import Table from 'react-bootstrap/Table';
 import BookDataService from "../services/book.services";
 
 const BooksList = ({ getBookId }) => {
@@ -30,7 +31,7 @@ const BooksList = ({ getBookId }) => {
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
-            <th>#</th>
+            <th>Sl. No.</th>
             <th>Book Title</th>
             <th>Book Author</th>
             <th>Status</th>
@@ -49,6 +50,7 @@ const BooksList = ({ getBookId }) => {
                   <Button
                     variant="secondary"
                     className="edit"
+                    style={{marginRight:"10px"}}
                     onClick={(e) => getBookId(doc.id)}
                   >
                     Edit

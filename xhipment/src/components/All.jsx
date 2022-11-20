@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import { Container, Navbar, Row, Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import AddBook from "./AddBook";
 import BooksList from "./BooksList";
 // import "./App.css";

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Form, Alert, InputGroup, Button, ButtonGroup } from "react-bootstrap";
+import Form from 'react-bootstrap/Form';
+import Alert from 'react-bootstrap/Alert';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import BookDataService from "../services/book.services";
 
 const AddBook = ({ id, setBookId }) => {
@@ -75,7 +79,7 @@ const AddBook = ({ id, setBookId }) => {
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBookTitle">
             <InputGroup>
-              <InputGroup.Text id="formBookTitle">B</InputGroup.Text>
+              <InputGroup.Text id="formBookTitle">Title</InputGroup.Text>
               <Form.Control
                 type="text"
                 placeholder="Book Title"
@@ -87,7 +91,7 @@ const AddBook = ({ id, setBookId }) => {
 
           <Form.Group className="mb-3" controlId="formBookAuthor">
             <InputGroup>
-              <InputGroup.Text id="formBookAuthor">A</InputGroup.Text>
+              <InputGroup.Text id="formBookAuthor">Author</InputGroup.Text>
               <Form.Control
                 type="text"
                 placeholder="Book Author"
@@ -120,7 +124,7 @@ const AddBook = ({ id, setBookId }) => {
           </ButtonGroup>
           <div className="d-grid gap-2">
             <Button variant="primary" type="Submit">
-              Add/ Update
+              Add / Update
             </Button>
           </div>
         </Form>
